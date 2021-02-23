@@ -1,0 +1,139 @@
+
+.about-us{
+    height: 250px;
+    font-family: 'Parisienne', cursive;
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(240, 239, 239);
+}
+
+.banner{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 1024px;
+    height: 500px;
+    background-image: url("../pictures/10-cut-dark.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position: relative;
+    top: -60px;
+    z-index: 100;   
+}
+
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    padding: 5%;  
+}
+
+.banner-text h5{
+    font-size: 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.banner-text p{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+.icon{
+    color: #FF7143;
+}
+
+.michelin{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+}
+
+.michelin-images{
+    display: flex;
+    flex-direction: column;    
+}
+
+.michelin-images img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.michelin-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lora', serif;
+    background-color: rgb(240, 239, 239);
+    padding: 8%;
+}
+
+.michelin-text h1{
+    font-family: 'Playfair Display', serif;
+}
+
+.outer-trio{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.trio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Lora', serif;
+    color: gray
+}
+
+.trio h1{
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+
+@media screen and (min-width: 576px){
+
+    .banner-text{
+        padding-left: 50%;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .michelin{
+        flex-direction: row;
+    }
+
+    .michelin-images{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        
+    }
+
+    .michelin-images img{
+        width: 50%;
+    }
+
+    .michelin-text{
+        width: 50%;
+    }
+
+    .outer-trio{
+        flex-direction: row;
+    }
+  }

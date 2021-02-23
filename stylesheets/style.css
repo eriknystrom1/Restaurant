@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.our-menu {
+    background-color: rgb(240, 239, 239);
+    font-family: 'Parisienne', cursive;
+    padding: 60px;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 70px;
+}
+
+.button{
+    width: 140px;
+    padding: 12px;
+    background-color: #FF7143;
+    color: white;
+    border: 0;
+    font-size: 12px;
+}
+
+header{   
+    height: 70px;
+}
+
+nav{
+    margin: auto;
+    max-width: 1024px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    background-color: rgb(243, 241, 241);
+}
+
+.fa-times-circle{
+    color: white;
+}
+
+.sidemenu{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 200;
+    left: -100;
+}
+
+.inner-sidemenu-left{
+    width: 80vw;
+    height: 100vh;
+    background:white;
+}
+
+.inner-sidemenu-right{
+    width: 20vw;
+    height: 100vh;
+    background: black;
+    opacity: 60%;
+}
+
+.sidemenu-hidden{
+    left: -100vw;
+}
+
+.sidemenu-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.sidemenu-top img{
+    padding-bottom: 30px;
+}
+
+.sidemenu-socialmedia{
+    padding: 30px;
+    border-top-style: solid;
+    border-top-color: orange;   
+}
+
+.sidemenu-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 5%;
+}
+
+.sidemenu i{
+    padding: 5px;
+}
+
+.sidemenu a{
+    text-decoration: none;
+    color: #222;
+    padding: 15px;       
+}
+
+.sidemenu a+a{
+    border-top-style: solid;
+    border-top-color: lightgrey;
+    border-width: 1px;
+}
+
+.desktop{
+    font-size: 16px;    
+    display: none;
+}
+
+.desktop a{
+    text-decoration: none;
+    color: #222;
+    padding: 3px;
+}
+
+.get-in-touch{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    background-image: url("../pictures/12-cut-dark.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.get-in-touch-text{
+    font-family: 'Lora', serif;
+    font-style: italic;
+}
+
+.get-in-touch-text h1{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+footer{
+    height: 80px;
+    background-color: black;
+    color: white;
+}
+
+.inner-footer{
+    height: 80px;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo div{
+    display: none;
+    font-size: 12px;
+}
+
+footer i{
+    padding: 5px;
+}
+
+@media screen and (min-width: 650px){
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+
+    .get-in-touch{
+        padding: 0 30%;
+    }
+
+    .footer-logo div{
+        display: block;
+    }
+
+    .inner-footer{
+        justify-content: space-between;
+    }
+}

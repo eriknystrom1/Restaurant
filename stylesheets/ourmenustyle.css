@@ -1,0 +1,334 @@
+
+.main {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-4-menu {  
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+.container-4-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-menu {
+    background-color: rgb(240, 239, 239);
+    font-family: 'Parisienne', cursive;
+    font-weight: lighter;
+}
+
+.container-three-icons-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+}
+
+.container-item {
+    width: 100%;
+}
+
+.lora-menu {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: grey;
+}
+
+.linewrapper {
+    display: flex;
+    align-items: baseline;
+}
+
+.menu-margin-left {
+    margin-left: 4%;
+}
+
+.middle {
+    border-bottom: 1px dotted #aaa;
+    flex-grow: 4;
+    margin: 0 5px;
+}
+
+.menu-margin-right {
+    margin-right: 4%;
+}
+
+.fa-angle-up {
+    position: absolute;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    size: 70%;
+    width: 8%;
+    height: 4%;
+    top: 15%;
+    left: 85%;
+    font-size: 50%;
+    text-align: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.fa-long-arrow-alt-right {
+    margin-left: 5%;
+}
+
+.container-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.img {
+    max-width: 100%;
+}
+
+.container-4-div-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    color: white;
+    justify-content: center;
+}
+
+.container-picture-text-3 {  /* Denna räddade oss */
+    position: relative;
+    margin-top: -70%;
+    color: white;
+}
+
+.container-picture-text-2 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.three-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p-three-items {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 90%;  
+}
+
+.exquisite{
+    height: 600px;
+    top: -50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    /* justify-content: center; */
+    background-image: url("../pictures/15-cut.jpg");
+    background-size: cover;
+    background-position: center center;
+    /* text-align: center; */
+    position: relative;
+    z-index: -100;
+}
+
+.exquisite-header{
+    font-family:'Parisienne', cursive;
+    font-size: 50px;
+}
+
+.exquisite-text{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    padding: 7%;
+}
+
+/* .Exquisite-Taste {
+    font-size: 300%;
+    font-family: 'Parisienne', cursive;
+    position: absolute;
+    margin-top: 20%;
+}
+
+.Exquisite-Text {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 130%;
+    position: absolute;
+    margin-top: 45%;
+}
+
+.Exquisite-Button {
+    color: white;
+    background-color: #FF7143;
+    border: none;
+    padding: 3% 7% 3% 7%;
+    position: absolute;
+    margin-top: 90%;
+} */
+
+.img-mobile {
+    position: relative;
+    width: 375px;
+    height: 850px;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(70%);
+}
+
+.centered {
+    position: absolute;    
+    font-family: 'Playfair Display', serif;
+    font-weight: lighter;
+    font-size: 100%;
+    text-align: center;
+    margin: 10%;
+    text-justify: inter-word;
+}
+
+.top-center {
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    top: 15%;
+    font-size: 200%;
+    font-weight: lighter; 
+}
+
+.button-center {
+    position: absolute;
+    top: 70%;
+}
+
+/* DEKSTOP  */
+@media only screen and (min-width: 650px) {
+    body {
+       display: flex;
+       flex-direction: column;
+    }
+    
+    .container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+    }
+
+    .section-4-menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-4-div {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        position: relative;
+        top: 50px;
+    }
+
+    .container-three-icons-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container-item {
+        width: 50%;
+    }
+
+    .three-icons {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .exquisite{
+        text-align: right;
+    }
+
+    .exquisite-text{
+        text-align: right;
+        padding-left: 30%;
+    }
+
+    .img-mobile {
+        width: 100%;
+        height: 20%;
+        object-fit: cover;
+        z-index: -1;   
+        filter: brightness(70%);
+    }
+
+    .top-center {
+        font-family: 'Playfair Display', serif;
+        position: absolute;
+        top: 15%;
+        font-size: 200%;
+        font-weight: lighter; 
+        color: white;
+    }
+
+    .centered {
+        position: absolute;    
+        font-family: 'Playfair Display', serif;
+        font-weight: lighter;
+        font-size: 100%;
+        width: 40%;
+        top: 20%;
+        justify-self: flex-end;
+        flex-direction: row;
+    }
+
+    .button-center {
+        position: absolute;
+        top: 70%;
+    }
+
+    .button-bg-2 {
+        width: 45%;
+        padding: 3% 5% 3% 5%;
+    }
+
+    @media only screen and (min-width: 1100px){
+        .exquisite-text{
+            padding-right: 0;
+        }
+    }
+}
